@@ -1,0 +1,23 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 216.94 sec <<< FAILURE!
+validateCreateNewContact(com.crm.qa.testcases.ContactsPageTest)  Time elapsed: 20.377 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchFrameException: No frame element found by name or id mainpanel
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'SIT-PC', ip: '192.168.0.100', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_152'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:881)
+	at com.crm.qa.pages.HomePage.clickContactLink(HomePage.java:42)
+	at com.crm.qa.testcases.ContactsPageTest.validateCreateNewContact(ContactsPageTest.java:50)
+
+validateLoginPageTitle(com.crm.qa.testcases.LoginPageTest)  Time elapsed: 0.221 sec  <<< FAILURE!
+java.lang.AssertionError: expected [Free CRM software in the cloud powers sales and customer service] but found [#1 Free CRM software in the cloud for sales and service]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at org.testng.Assert.assertEquals(Assert.java:199)
+	at com.crm.qa.testcases.LoginPageTest.validateLoginPageTitle(LoginPageTest.java:36)
+
