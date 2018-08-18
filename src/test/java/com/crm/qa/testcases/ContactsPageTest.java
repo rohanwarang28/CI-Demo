@@ -52,6 +52,7 @@ public class ContactsPageTest extends TestBase{
 		homepage.clickNewContactLink();
 		
 		contactspage.createNewContact(title,fname,lname,company);
+		//hello
 	}
 	
 	
